@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Midterm2</string>
+    <string name="google_map_api_key">AIzaSyDtt-A6tq6CVed_ywWMPj0312GFIVU0Jcc</string>
 </resources>

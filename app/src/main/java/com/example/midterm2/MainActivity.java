@@ -68,17 +68,15 @@ public class MainActivity extends AppCompatActivity {
                                 long population = countryObject.getLong("population");
                                 String timezone = countryObject.getJSONArray("timezones").getString(0);
                                 String currency = countryObject.getJSONArray("currencies").getJSONObject(0).getString("name");
+                                double latitude = countryObject.getJSONArray("latlng").getDouble(0);
+                                double longitude = countryObject.getJSONArray("latlng").getDouble(1);
 
                                 // Create a Country object and add it to your list
-                                Country country = new Country(name, capital, flagUrl, region, population, timezone, currency);
+                                Country country = new Country(name, capital, flagUrl, region, population, timezone, currency,latitude,longitude);
                                 countryList.add(country);
                                 adapter.notifyDataSetChanged();
-                                Toast.makeText(MainActivity.this, ""+country.getCapital(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, ""+country.getlatitude(), Toast.LENGTH_SHORT).show();
                             }
-
-                            // Update your RecyclerView adapter here
-
-
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

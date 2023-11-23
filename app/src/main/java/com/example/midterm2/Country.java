@@ -5,6 +5,7 @@ package com.example.midterm2;
 public class Country {
 
     private String name;
+    private Double latitude,longitude;
     private String capital;
     private String flagUrl;
     private String region;
@@ -13,7 +14,7 @@ public class Country {
     private String currency;
 
     // Constructor
-    public Country(String name, String capital, String flagUrl, String region, long population, String timezone, String currency) {
+    public Country(String name, String capital, String flagUrl, String region, long population, String timezone, String currency,Double latitude,Double longitude) {
         this.name = name;
         this.capital = capital;
         this.flagUrl = flagUrl;
@@ -21,8 +22,13 @@ public class Country {
         this.population = population;
         this.timezone = timezone;
         this.currency = currency;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
+    public Double getlatitude(){return latitude;}
+
+    public Double getLongitude(){return longitude;}
     // Getter and Setter for name
     public String getName() {
         return name;

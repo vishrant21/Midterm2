@@ -3,7 +3,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="120dp"
     android:layout_margin="20dp"
     android:id="@+id/lytCountry"
     android:orientation="horizontal"
@@ -37,5 +37,24 @@
             android:textSize="14sp"
             android:text="Country Capital"
             android:textColor="@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:id="@+id/txtInfo"
+                android:text="Check Info"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="See Location"
+                android:id="@+id/txtLocation"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
